@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PONE-D-12-35107</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0055674</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational biology</subject>
+            <subj-group>
+              <subject>Natural language processing</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Ecology</subject>
+            <subj-group>
+              <subject>Biodiversity</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Evolutionary biology</subject>
+            <subj-group>
+              <subject>Evolutionary systematics</subject>
+              <subj-group>
+                <subject>Taxonomy</subject>
+                <subj-group>
+                  <subject>Animal taxonomy</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Zoology</subject>
+            <subj-group>
+              <subject>Entomology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Computer science</subject>
+          <subj-group>
+            <subject>Ontology and logics</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Information science</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Computational Biology</subject>
+          <subject>Computer Science</subject>
+          <subject>Evolutionary Biology</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Utilizing Descriptive Statements from the Biodiversity Heritage Library to Expand the Hymenoptera Anatomy Ontology</article-title>
+        <alt-title alt-title-type="running-head">Expanding the Hymenoptera Anatomy Ontology</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Seltmann</surname>
+            <given-names>Katja C.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Pénzes</surname>
+            <given-names>Zsolt</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Yoder</surname>
+            <given-names>Matthew J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Bertone</surname>
+            <given-names>Matthew A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Deans</surname>
+            <given-names>Andrew R.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Invertebrate Zoology, American Museum of Natural History, New York, New York, United States of America</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Department of Ecology, University of Szeged, Szeged, Csongrád, Hungary</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Species File, Prairie Research Institute, Champaign, Illinois, United States of America</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Department of Entomology, North Carolina State University, Raleigh, North Carolina, United States of America</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>Department of Entomology, Pennsylvania State University, University Park, Pennsylvania, United States of America</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Moreau</surname>
+            <given-names>Corrie S.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Field Museum of Natural History, United States of America</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">enicospilus@gmail.com</email></corresp>
+        <fn fn-type="conflict">
+          <p>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Wrote the software: MJY KCS ZP. Conceived and designed the experiments: KCS ZP MJY MAB ARD. Performed the experiments: KCS ZP MAB MJY. Analyzed the data: KCS ZP. Contributed reagents/materials/analysis tools: ZP MJY KCS. Wrote the paper: KCS ARD ZP MAB MJY.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>18</day>
+        <month>2</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>2</issue>
+      <elocation-id>e55674</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>13</day>
+          <month>11</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>29</day>
+          <month>12</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Seltmann et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Hymenoptera, the insect order that includes sawflies, bees, wasps, and ants, exhibits an incredible diversity of phenotypes, with over 145,000 species described in a corpus of textual knowledge since Carolus Linnaeus. In the absence of specialized training, often spanning decades, however, these articles can be challenging to decipher. Much of the vocabulary is domain-specific (e.g., Hymenoptera biology), historically without a comprehensive glossary, and contains much homonymous and synonymous terminology. The Hymenoptera Anatomy Ontology was developed to surmount this challenge and to aid future communication related to hymenopteran anatomy, as well as provide support for domain experts so they may actively benefit from the anatomy ontology development. As part of HAO development, an active learning, dictionary-based, natural language recognition tool was implemented to facilitate Hymenoptera anatomy term discovery in literature. We present this tool, referred to as the ‘Proofer’, as part of an iterative approach to growing phenotype-relevant ontologies, regardless of domain. The process of ontology development results in a critical mass of terms that is applied as a filter to the source collection of articles in order to reveal term occurrence and biases in natural language species descriptions. Our results indicate that taxonomists use domain-specific terminology that follows taxonomic specialization, particularly at superfamily and family level groupings and that the developed Proofer tool is effective for term discovery, facilitating ontology construction.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>The Hymenoptera Anatomy Ontology was initially funded in part by NSF grants BDI-0446224, EF-0337220, and DEB-0328922. Primary funding for this project was from NSF DBI-0850223 (<ext-link ext-link-type="uri" xlink:href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=0850223" xlink:type="simple">http://www.nsf.gov/awardsearch/showAward?AWD_ID=0850223</ext-link>). Additional support for Zsolt Pénzes was from TÁMOP-4.2/B-09/1/KONV-2010-0005, KTIA-OTKA CNK 80140, and HURO/0901/205/2.2.2. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="7"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>The vast majority of our biological knowledge exists only in printed, prosaic natural language, or ‘analog’ texts <xref ref-type="bibr" rid="pone.0055674-Bodenreider1">[1]</xref>. This situation is equally true for the field of descriptive taxonomy, the subdomain of biology responsible for describing organisms and classifying them into nested sets cataloged with scientific names (i.e. taxa). Publication protocol for the description of a new animal species requires that an organism ‘diagnosis’ (list of distinguishing characteristics) for each new taxon be published in a journal in accordance with the International Code of Zoological Nomenclature <xref ref-type="bibr" rid="pone.0055674-International1">[2]</xref> and until 2011 these journals had to be printed in journals with paper copies. Recent modifications in the code now allow for entirely electronic publication under certain conditions <xref ref-type="bibr" rid="pone.0055674-International2">[3]</xref>. Language usage for these diagnoses is dependent on the describing authors, journal editors, and reviewers of the manuscript, without standardized vocabularies across domains. Analog descriptions about our domain (Hymenoptera) posed a challenge for development of the Hymenoptera Anatomy Ontology (HAO) <xref ref-type="bibr" rid="pone.0055674-Yoder1">[4]</xref> as well as other anatomy ontology projects, which aim, in part, is to capture lexica from legacy literature. The primary goal of this effort was to propose a method of efficiently surveying the literature for terms (definition of term sensu Seltmann et al., 2012) <xref ref-type="bibr" rid="pone.0055674-Seltmann1">[5]</xref> and in the process observe trends by analyzing term occurrence in species descriptions. The collected anatomical (i.e. morphological) terms were applied to the construction of the HAO, based on principles of structural similarity <xref ref-type="bibr" rid="pone.0055674-Seltmann1">[5]</xref>, <xref ref-type="bibr" rid="pone.0055674-Vogt1">[6]</xref> enabling future diagnoses to be tied a priori to a structured vocabulary that is detailed enough in morphological terminology to be effective for comparable and accurate descriptions <xref ref-type="bibr" rid="pone.0055674-Deans1">[7]</xref>, <xref ref-type="bibr" rid="pone.0055674-Mullins1">[8]</xref>.</p>
+    </sec>
+    <sec id="s2" sec-type="materials|methods">
+      <title>Materials and Methods</title>
+      <sec id="s2a">
+        <title>Term Collection</title>
+        <p>In the biological sciences one of the important and growing online resources is the Biodiversity Heritage Library (BHL) <xref ref-type="bibr" rid="pone.0055674-Biodiversity1">[9]</xref>, a clearinghouse for legacy literature, all of which is scanned and subsequently optically character recognized (OCRed). The International Society of Hymenoptera (ISH) <xref ref-type="bibr" rid="pone.0055674-International3">[10]</xref> archives its <italic>Journal of Hymenoptera Research</italic> (<italic>JHR</italic>) in the BHL. We extracted OCR text for JHR (1993–2007, the latest year available at the time of data collection) from the BHL and manually partitioned the 353 articles for upload into the mx database <xref ref-type="bibr" rid="pone.0055674-mx1">[11]</xref>. Mx is a Web-based, open source set of tools for descriptive taxonomy with recent advances to support collaborative ontology development. When this exercise was conducted the BHL Application Programming Interface (API) did not return OCR of specific articles, only of entire issues of the journal. Processing of the BHL OCR required manually cutting and pasting the text into the database. We made no attempt to correct the OCR output. Associated metadata, including reference citation, was associated with each article. Citations were collected using Zotero <xref ref-type="bibr" rid="pone.0055674-Zotero1">[12]</xref> after Google Scholar <xref ref-type="bibr" rid="pone.0055674-Google1">[13]</xref> searches returned citations in Endnote <xref ref-type="bibr" rid="pone.0055674-Endnote1">[14]</xref> format, and these citations were then uploaded into the mx database using a custom Endnote importation tool.</p>
+        <p>Once the articles were in the database, a simple dictionary-based, entity recognition tool was developed in mx to match terms captured for the HAO within blocks of text. The tool, or ‘Proofer’, uses string matching, allowing for commonly found exceptions and special cases, thus reducing the impact of malformed OCR commonly found in the BHL-delivered JHR text. The Proofer displays for the user a list of matches on terms in the ontology (highlighted and linked to the display page for that term; <xref ref-type="fig" rid="pone-0055674-g001">figure 1</xref>-A) but also presents a proposed list of terms that could be added to the database if the user chooses. In order to create this list, sentences are first broken down into phrases by splitting sentences at small words (1–3 characters long), removing those small words, and splitting at punctuation (period, comma, semi-colon, etc). These phrases are then displayed to the user in a list format starting with a single unmatched word, or term not already in the database, and 1–5 flanking words expanded from left to right (<xref ref-type="fig" rid="pone-0055674-g001">figure 1</xref>-C). Users then browse the list of proposed unmatched terms and select those that should be added to the database; thus user (human) input is necessary in the final addition of terms to the database. Adding flanking words reveals more complex anatomical labels such as ‘propleural arm muscle’ where ‘propleural arm’ may already be a label in the database but ‘propleural arm muscle’ may not. All terms added in this manner were annotated (‘tagged’) as JHR-BHL entered objects so that future analyses of the terms collected during this exercise was possible (tag field illustrated, figure1-B). Also, in order to reduce the number of potential terms presented to the reviewer, active learning <xref ref-type="bibr" rid="pone.0055674-Day1">[15]</xref> was employed in a feedback mechanism between application and user.</p>
+        <fig id="pone-0055674-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0055674.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Screenshot of the mx interface for string matching terms in the database with OCR text.</title>
+            <p>Possible additional new terms are proposed for the user to include.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055674.g001" position="float" xlink:type="simple"/>
+        </fig>
+        <p>Words presented to the user for possible inclusion into the database that are not selected by the user are added to a stop words table. If a word is rejected by the user 10 times (i.e. from ten separate articles) that word is added to the final stop words list and no longer presented in subsequent articles, thus reducing the total number of words presented to the user for evaluation. Links to the source code for mx (including the Proofer) are available in the <xref ref-type="supplementary-material" rid="pone.0055674.s001">Supplementary Material (S1)</xref>.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Comparison to Related Text Processing Applications</title>
+        <p>CharParser <xref ref-type="bibr" rid="pone.0055674-Cui1">[16]</xref> and GoldenGATE <xref ref-type="bibr" rid="pone.0055674-Sautter1">[17]</xref>–<xref ref-type="bibr" rid="pone.0055674-Klingenberg1">[19]</xref> are both applications for examining taxonomic descriptions contained in legacy literature. GoldenGATE is an editor for marking up the text of an entire article, and transforming it into an XML structured document following TaxonX schema. It uses sophisticated pattern matching rules along with subsequent human editing to define a document’s structure. Among the elements identified are the general sections of a ‘taxonomic treatment’, external identifiers (LSIDs), and taxon names. At the present time, individual descriptive statement mark-up has not been realized in GoldenGATE, although interest does exist to include character level semantic annotation in the TaxonX schema <xref ref-type="bibr" rid="pone.0055674-Catapano1">[20]</xref>. CharParser is a semi-automated semantic annotation system, capturing individual descriptive statements in a structured XML document. In order to facilitate annotation, CharParser develops an independent glossary of qualitative and quantitative terms during the text mining and training process. This aspect of the CharParser application is similar to the Proofer, as it is a lexicon builder enhanced by a human user. CharParser, however, attempts to attain not only the term from a publication, but also to discern its inherent meaning. This is analogous to the Proofer tool plus mx database, as terms collected by the Proofer are eventually associated with ontology concepts via later stages of the ontology building process by domain experts.</p>
+        <p>Other string matching software exists for examining BHL-generated OCR text, primarily focused on taxon name discovery. TaxonFinder <xref ref-type="bibr" rid="pone.0055674-Leary1">[21]</xref> and NetiNeti <xref ref-type="bibr" rid="pone.0055674-Akella1">[22]</xref> determine relevant BHL articles for a user by utilizing a controlled vocabulary, or taxon name lists. Although anatomy ontology term usage in descriptive articles has potential as a viable method for literature discovery, at present the Proofer only examines articles specifically chosen for evaluation by a user, i.e. those identified as descriptive works in the domain of interest.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Analysis of Collected Terms</title>
+        <p>For each of the 353 articles a small amount of metadata (as ‘tags’) was captured in the database to facilitate creating lists of terms specific for analysis. First, the articles were reviewed and placed into one of two categories: ‘description of new taxon’ or ‘non-description’. Articles were deemed descriptive based on the use of the words ‘description of’ in the article title or if taxonomic treatments were contained within the body of the article. Additionally for each article, the name of the taxon being described was captured in the database at the family level. Finally, terms representing morphological (i.e. anatomical) concepts and those representing qualitative concepts were differentiated.</p>
+        <p>The resulting data were then used to produce text files useful in R <xref ref-type="bibr" rid="pone.0055674-R1">[23]</xref> (version 2.11.1), creating an occurrence (presence/absence) matrix using anatomical terms as characters and articles as terminals, with each article tied to a taxon as described within the article. Terms designated as characters were limited to morphological terms and totaled 816. Qualitative terminology (i.e. ‘shiny’, ‘brown’, ‘rugulose’) was not included in the dataset. The terms ‘cell’, ‘area’ and ‘costa’ were removed from the character list as these terms are commonly used in other disciplines besides descriptive biology and often had non-morphological meaning in descriptions. 179 articles were used as terminals, representing 35 families and 10 superfamilies.</p>
+        <p>Synonyms and plural terms were summed in the analysis and terms were analyzed as they were recorded in the database. The characters were scored in a binary matrix as presence (1) or absence (0) of the term occurrence within the text of a given article. Four permutations of the matrix were created based on the occurrence of a term. Analyses were preformed that included terms that occurred 2, 10, 50 and 100 times in at least one article. Choosing articles for analysis based solely on occurrence of a term in all articles did not retrieve discrete articles sets at higher numbers, as common terms (<xref ref-type="fig" rid="pone-0055674-g002">figure 2</xref>) are ubiquitous. Restricting the terms included in analysis limited the number of included terms to: 796, 500, 123 and 40 respectively (<xref ref-type="fig" rid="pone-0055674-g003">figure 3</xref>).</p>
+        <fig id="pone-0055674-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0055674.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Most commonly used anatomical terms in Hymenoptera.</title>
+            <p>Terms in this figure are ranked based on occurrence among all articles (how many articles a term occurred). Number on chart and size of pie represents the number of total times the term occurred in all articles.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055674.g002" position="float" xlink:type="simple"/>
+        </fig>
+        <fig id="pone-0055674-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0055674.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>The number of characters (terms) present in at least 2, 10, 50, and 100 articles.</title>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055674.g003" position="float" xlink:type="simple"/>
+        </fig>
+        <p>In order to assess the occurrence of terms contained within articles, matrices were investigated using agglomerative hierarchical clustering methods performed in the R <xref ref-type="bibr" rid="pone.0055674-R1">[23]</xref> (version 2.11.1) using packages ‘stats’ <xref ref-type="bibr" rid="pone.0055674-R1">[23]</xref>, ‘simba’ <xref ref-type="bibr" rid="pone.0055674-Jurasinski1">[24]</xref>, ‘vegan’ <xref ref-type="bibr" rid="pone.0055674-Oksanen1">[25]</xref>, and ‘ape’ <xref ref-type="bibr" rid="pone.0055674-Paradis1">[26]</xref>. The range of recovered groups (clusters) on the trees varied from 59–160 based on which analysis method was used (see <xref ref-type="fig" rid="pone-0055674-g004">figure 4</xref> below). Groups were revealed by trimming trees after analysis, and evaluated based on two criteria. First, family and superfamily membership was assigned to each terminal, based on the taxa described in the article. A family or superfamily is a group of organisms based on shared characteristics, associated together under the auspices of the classification hierarchical system, under which other groupings (tribe, subfamily, genus, species) are clustered. Superfamilies are groups that contain multiple families. These families and superfamilies are generally listed in the analyzed journal article; if not, the taxon was placed according to our present understanding of Hymenoptera relationships. Once terminals (taxa) were assigned to a family/superfamily the trees were pruned according to these groups. For example, if two terminals belonged to the same family, and reached the next internal node, they were considered belonging to the same group. Ideally, 10 groups of superfamilies and 37 of families was expected, as this is the number of Hymenoptera families/superfamilies published in the JHR articles used in the analysis.</p>
+        <fig id="pone-0055674-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0055674.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Variation of number of returned clusters based on clustering method and term occurrence in articles.</title>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055674.g004" position="float" xlink:type="simple"/>
+        </fig>
+        <p>The grouping of terminals on the basis of binary characters was extensively investigated by agglomerative hierarchical clustering using the linkage methods (single, complete, average (UPGMA) <xref ref-type="bibr" rid="pone.0055674-Sokal1">[27]</xref> and McQuitty (WPGMA)) and neighbor-joining (NJ) <xref ref-type="bibr" rid="pone.0055674-Saitou1">[28]</xref>. <xref ref-type="fig" rid="pone-0055674-g004">Figure 4</xref> outlines the range of outcomes based on which clustering method was chosen. The former result in ultrametric trees (dendrograms, which are ‘rooted’), while the result of the NJ method approaches an additive tree (unrooted) that is based on optimization of the distance on the whole tree <xref ref-type="bibr" rid="pone.0055674-Saitou1">[28]</xref>. Seven different metric distances were selected, 3 of which were symmetric (incorporate absence matching) and 4 were asymmetric (absence matching is ignored) as follows Kaufman &amp; Rousseeuw, 1990 <xref ref-type="bibr" rid="pone.0055674-Kaufman1">[29]</xref> and Legendre and Legendre 1998 <xref ref-type="bibr" rid="pone.0055674-Legendre1">[30]</xref>. The Sorensen-Average results tree is included (<xref ref-type="fig" rid="pone-0055674-g005">figure 5</xref>) to visually illustrate the grouping results because it most accurately follows groupings expected for Hymenoptera. All other trees and analysis files are available in the <xref ref-type="supplementary-material" rid="pone.0055674.s002">supplementary material (S2)</xref>.</p>
+        <fig id="pone-0055674-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0055674.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Sorensen Average tree with superfamily name, and number of groupings calculated to superfamily level.</title>
+            <p>The tree represented is the entire, untrimmed tree and the number after the superfamily is the number of groupings retrieved when the tree is trimmed.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055674.g005" position="float" xlink:type="simple"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p>From the 353 articles we collected 1189 new morphological terms used by Hymenoptera taxonomists. These were added to the mx database, augmenting the development of the Hymenoptera Anatomy Ontology. The Proofer tool developed to assist analysis of these articles improved the efficiency of term extraction from legacy literature by reducing the number of terms presented to the user for review. Comparison of the number of terms presented to the user with and without the Proofer stop words list for 25 randomly selected articles demonstrated that the Proofer stop word list reduced the number of terms displayed to the user by 1/3 of the total actual word count of the article, which was an 80% reduction in the number of combinations of words displayed to a user by the Proofer tool.</p>
+      <p>180 of the 353 articles were identified to contain descriptions of new taxa, wholly or in part. The most frequently found anatomical terms in those 180 articles are listed in <xref ref-type="fig" rid="pone-0055674-g002">figure 2</xref>.</p>
+      <p>The shortest tree was returned from the Sorensen Average cluster analysis, including characters that were coded for 2 or more terminals, and pruned to superfamily level. This tree results in 63 distinct groupings when the tree was pruned, with observable large clusters of Ichneumonoidea, Chalcidoidea, Symphyta, and Aculeata (<xref ref-type="fig" rid="pone-0055674-g005">figure 5</xref>).</p>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>The Proofer application and workflow presented here allows for reviewing descriptive text relatively quickly for new terms to supplement the construction of anatomy ontologies. The workflow required the input of domain experts, and open access publications, resulting in the collection of 1189 new terms for the HAO. Although the Proofer tool accumulated numerous terms for inclusion in the HAO, mapping terms to existing classes or creating ontology compliant definitions for those concepts requires further expertise and citation. At present only 144 of the collected terms are tied to HAO concepts. To define concepts, HAO curators initially selected literature that was generally inclusive, taxonomically, of Hymenoptera (including glossary and online resources). This process was done, in part, prior to looking at the BHL JHR articles. Most of the very common terms were already included in the database prior to the term discovery exercise, leaving predominantly highly granular, and superfamily-specific terms used in taxonomic descriptions to be discovered using the Proofer, accounting for the low number of these terms presently fully incorporated in the HAO. These terms will be utilized as the HAO continues to grow, and curators focus on publications from domain experts working exclusively within superfamilies, as this is where the term granularity is demonstrated.</p>
+      <p>The importance of domain expertise in the process of incorporating these terms cannot be overstated. Jenesen and Bork, 2010 <xref ref-type="bibr" rid="pone.0055674-Jensen1">[31]</xref> clearly regards input from biologists as necessary for success in biomedical, ontology based literature mining and Dahdul et al. <xref ref-type="bibr" rid="pone.0055674-Dahdul1">[32]</xref> described the importance of taxon experts for phenotype annotation curation. Our evaluation concurs with their observation and extends the thought to conclude that granular terminology is necessary to capture morphological variation, but it requires domain expertise, and evaluation of their publications, in the process, to identify these terms and fully utilize them in the ontology.</p>
+      <p>Cluster analysis lends evidence for the observation that the Hymenoptera community tends to use granular, domain-specific (i.e., taxon-specific) terminology. Datasets were analyzed extensively using different permutations of clustering methods and datasets delimited by term occurrence. As expected, a high amount of variation in the number of groups recovered was observed in the analysis results. Not all hymenopteran families were in analysis, because taxonomic descriptions of some groups were not published in <italic>JHR</italic> between 1993–2007. Also, there is a strong bias in the number of papers concerning Ichneumonoidea and Chalcidoidea represented. This is due, in part, to the large number of taxonomists interested in these diverse superfamilies. Despite these idiosyncrasies in the data obvious groupings for Ichneumonoidea, Chalcidoidea, “Symphyta” and Aculeata were retrieved. On a more detailed level, many family level groupings were recovered, demonstrating that we can group articles, and those taxa described in the articles, simply by the terms used to describe those organisms. In the comparison of cluster analysis, the number of clusters recovered decreased with an increase of characters (terms) used in the analysis. The terms found more commonly are generally used across Hymenoptera. Terms like head, wing, and carina are almost universally used, and thus provide very little signal to group articles. In order to capture the variation in the terminology of the authors, to manifest any observable signal in the analysis, much less frequently used terms needed to be included.</p>
+      <p>The corpus of biological literature will continue to grow and with it the need for more automated methods to utilize and discover the information contained within the articles. Natural language processing methods for biological data discovery is only possible through open access publications, and efforts such as the Biodiversity Heritage Library to make legacy literature freely available. This exercise to observe trends in the terminology illustrates how the accessibility to literature facilitates anatomy ontology construction, and an underlying community trend toward domain specificity and, thus, disparate term usage, one of the primary justifications for unifying Hymenoptera terminology through the HAO.</p>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0055674.s001" mimetype="application/zip" xlink:href="info:doi/10.1371/journal.pone.0055674.s001" position="float" xlink:type="simple">
+        <label>S1 Supplementary Material</label>
+        <caption>
+          <p>The most recent version of mx code, including the Proofer tool, is available through SourceForge (<ext-link ext-link-type="uri" xlink:href="http://purl.oclc.org/NET/mx-database" xlink:type="simple">http://purl.oclc.org/NET/mx-database</ext-link>). The specific version of mx used during analysis is archived on SourceForge and in this combined file.</p>
+          <p>(ZIP)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0055674.s002" mimetype="application/zip" xlink:href="info:doi/10.1371/journal.pone.0055674.s002" position="float" xlink:type="simple">
+        <label>S2 Supplementary Material</label>
+        <caption>
+          <p>The specific JHR BHL article list, list of terms present in the mx database, and R-scripts used in analysis are supplied in this combined file. These files, and all resulting trees, are additionally archived in the Dryad data repository (doi:10.5061/dryad.3g57k).</p>
+          <p>(ZIP)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>The authors thank Elizabeth MacLeod, Andrew Ernst, and Patricia Mullins for being the representative users for a great number of the articles, Dr. Beth Gardner from NCSU Department of Forestry and Environmental Resources, and the International Society of Hymenopterists for having the forethought and inclination to put their journal on the Biodiversity Heritage Library Website.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0055674-Bodenreider1">
+        <label>1</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Bodenreider O (2006) Lexical, terminological and ontological resources for biological text mining. In: Ananiadou S, McNaught J, editors. Text Mining for Biology and Biomedicine. Boston and London: Artech House. 43–66.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-International1">
+        <label>2</label>
+        <mixed-citation publication-type="other" xlink:type="simple">International Code of Zoological Nomenclature website. Available: <ext-link ext-link-type="uri" xlink:href="http://iczn.org/code" xlink:type="simple">http://iczn.org/code</ext-link>. Accessed 2012 Oct 8.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-International2">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><collab xlink:type="simple">International Commission on Zoological Nomenclature</collab> (<year>2012</year>) <article-title>Amendment of Articles 8, 9, 10, 21 and 78 of the International Code of Zoological Nomenclature to expand and refine methods of publication</article-title>. <source>ZooKeys</source> <volume>219</volume>: <fpage>1</fpage>–<lpage>10</lpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3897/zookeys.219.3944" xlink:type="simple">10.3897/zookeys.219.3944</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Yoder1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yoder</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Mikó</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Seltmann</surname><given-names>KC</given-names></name>, <name name-style="western"><surname>Bertone</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Deans</surname><given-names>AR</given-names></name> (<year>2010</year>) <article-title>A gross anatomy ontology for Hymenoptera</article-title>. <source>PLoS ONE</source> <volume>5</volume>: <fpage>e15991</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Seltmann1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Seltmann</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Yoder</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Miko</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Forshage</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Bertone</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>A hymenopterists’ guide to the Hymenoptera Anatomy Ontology: utility, clarification, and future directions</article-title>. <source>Journal of Hymenoptera Research</source> <volume>27</volume>: <fpage>67</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Vogt1">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vogt</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Bartolomaeus</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Giribet</surname><given-names>G</given-names></name> (<year>2009</year>) <article-title>The linguistic problem of morphology: structure versus homology and the standardization of morphological data</article-title>. <source>Cladistics</source> <volume>26</volume>: <fpage>301</fpage>–<lpage>325</lpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1096-0031.2009.00286.x" xlink:type="simple">10.1111/j.1096-0031.2009.00286.x</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Deans1">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Deans</surname><given-names>AR</given-names></name>, <name name-style="western"><surname>Yoder</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Balhoff</surname><given-names>JP</given-names></name> (<year>2012</year>) <article-title>Time to change how we describe biodiversity</article-title>. <source>Trends in ecology &amp; evolution</source> <volume>27</volume>: <fpage>78</fpage>–<lpage>84</lpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.tree.2011.11.007" xlink:type="simple">10.1016/j.tree.2011.11.007</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Mullins1">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mullins</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Kawada</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Balhoff</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Deans</surname><given-names>A</given-names></name> (<year>2012</year>) <article-title>A revision of Evaniscus (Hymenoptera, Evaniidae) using ontology-based semantic phenotype annotation</article-title>. <source>ZooKeys</source> <volume>223</volume>: <fpage>1</fpage>–<lpage>38</lpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3897/zookeys.223.3572" xlink:type="simple">10.3897/zookeys.223.3572</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Biodiversity1">
+        <label>9</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Biodiversity Heritage Library website. Available: <ext-link ext-link-type="uri" xlink:href="http://www.biodiversitylibrary.org" xlink:type="simple">http://www.biodiversitylibrary.org</ext-link>. Accessed 2011 Feb 1.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-International3">
+        <label>10</label>
+        <mixed-citation publication-type="other" xlink:type="simple">International Society of Hymenopterists website. Available: <ext-link ext-link-type="uri" xlink:href="http://www.hymenopterists.org" xlink:type="simple">http://www.hymenopterists.org</ext-link>. Accessed 2012 Oct 1.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-mx1">
+        <label>11</label>
+        <mixed-citation publication-type="other" xlink:type="simple">mx website. Available: <ext-link ext-link-type="uri" xlink:href="http://purl.oclc.org/NET/mx-" xlink:type="simple">http://purl.oclc.org/NET/mx-</ext-link> database. Accessed 2011 Mar 7.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Zotero1">
+        <label>12</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Zotero website. Available: <ext-link ext-link-type="uri" xlink:href="http://www.zotero.org" xlink:type="simple">http://www.zotero.org</ext-link>. Accessed 2010 Mar 18.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Google1">
+        <label>13</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Google Scholar website. Available: <ext-link ext-link-type="uri" xlink:href="http://scholar.google.com" xlink:type="simple">http://scholar.google.com</ext-link>. Accessed 2010 Mar 18.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Endnote1">
+        <label>14</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Endnote website. Available: <ext-link ext-link-type="uri" xlink:href="http://endnote.com" xlink:type="simple">http://endnote.com</ext-link>. Accessed 2010 Mar 18.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Day1">
+        <label>15</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Day D, Aberdeen J, Hirschman L, Kozierok R, Robinson P, <etal>et al</etal>.. (1997) Mixed-initiative development of language processing systems. Proceedings of the fifth conference on applied natural language processing. Morristown, NJ, USA: Association for Computational Linguistics. 348–355. doi:10.3115/974557.974608.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Cui1">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cui</surname><given-names>H</given-names></name> (<year>2012</year>) <article-title>CharaParser for fine-grained semantic annotation of organism morphological descriptions</article-title>. <source>Journal of the American Society for Information Science and Technology</source> <volume>63</volume>: <fpage>738</fpage>–<lpage>754</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Sautter1">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sautter</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Böhm</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Agosti</surname><given-names>D</given-names></name> (<year>2007</year>) <article-title>Semi-automated XML markup of biosystematic legacy literature with the GoldenGATE editor</article-title>. <source>Pacific Symposium on Biocomputing</source> <volume>402</volume>: <fpage>391</fpage>–<lpage>402</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Agosti1">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Agosti</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Egloff</surname><given-names>W</given-names></name> (<year>2009</year>) <article-title>Taxonomic information exchange and copyright: the Plazi approach</article-title>. <source>BMC Research Notes</source> <volume>2</volume>: <fpage>53</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Klingenberg1">
+        <label>19</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Klingenberg C, Sautter G, Agosti D, Catapano T (2012) GoldenGATE XML Markup Editor Online User Manual. Available: <ext-link ext-link-type="uri" xlink:href="http://plazi.org/?q=GoldenGATE" xlink:type="simple">http://plazi.org/?q=GoldenGATE</ext-link>. Accessed 2012 Dec 10.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Catapano1">
+        <label>20</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Catapano T (2011) Personal Communication.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Leary1">
+        <label>21</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Leary</surname><given-names>PR</given-names></name>, <name name-style="western"><surname>Remsen</surname><given-names>DP</given-names></name>, <name name-style="western"><surname>Norton</surname><given-names>CN</given-names></name>, <name name-style="western"><surname>Patterson</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>Sarkar</surname><given-names>IN</given-names></name> (<year>2007</year>) <article-title>uBioRSS: tracking taxonomic literature using RSS</article-title>. <source>Bioinformatics (Oxford, England)</source> <volume>23</volume>: <fpage>1434</fpage>–<lpage>6</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Akella1">
+        <label>22</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Akella</surname><given-names>LM</given-names></name>, <name name-style="western"><surname>Norton</surname><given-names>CN</given-names></name>, <name name-style="western"><surname>Miller</surname><given-names>H</given-names></name> (<year>2012</year>) <article-title>NetiNeti: discovery of scientific names from text using machine-learning methods</article-title>. <source>BMC bioinformatics</source> <volume>13</volume>: <fpage>211</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-R1">
+        <label>23</label>
+        <mixed-citation publication-type="other" xlink:type="simple">R Development Core Team (2010) A language and environment for statistical computing. Vienna, Austria: R Foundation for Statistical Computing. Available: <ext-link ext-link-type="uri" xlink:href="http://www.r-project.org" xlink:type="simple">http://www.r-project.org</ext-link>. Accessed 2012 Dec 10.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Jurasinski1">
+        <label>24</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Jurasinski G, Retzer V (2012) A Collection of functions for similarity analysis of vegetation data. Available: <ext-link ext-link-type="uri" xlink:href="http://cran.r-project.org" xlink:type="simple">http://cran.r-project.org</ext-link>. Accessed 2012 Dec 10.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Oksanen1">
+        <label>25</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Oksanen J, Blanchet FG, Kindt R, Legendre P, O’Hara RB, <etal>et al</etal>.. (2010) vegan: Community Ecology Package. Available: <ext-link ext-link-type="uri" xlink:href="http://cran.r-project.org" xlink:type="simple">http://cran.r-project.org</ext-link>. Accessed 2012 Dec 10.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Paradis1">
+        <label>26</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Paradis</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Claude</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Strimmer</surname><given-names>K</given-names></name> (<year>2004</year>) <article-title>APE: Analyses of Phylogenetics and Evolution in R language</article-title>. <source>Bioinformatics</source> <volume>20</volume>: <fpage>289</fpage>–<lpage>290</lpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bioinformatics/btg412" xlink:type="simple">10.1093/bioinformatics/btg412</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Sokal1">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sokal</surname><given-names>RR</given-names></name>, <name name-style="western"><surname>Michener</surname><given-names>CD</given-names></name> (<year>1958</year>) <article-title>A statistical method for evaluating systematic relationships</article-title>. <source>Univ Kans Sci Bull</source> <volume>38</volume>: <fpage>1409</fpage>–<lpage>1438</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Saitou1">
+        <label>28</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Saitou</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Nei</surname><given-names>M</given-names></name> (<year>1987</year>) <article-title>The neighbor-joining method: a new method for reconstructing phylogenetic trees</article-title>. <source>Molecular biology and evolution</source> <volume>4</volume>: <fpage>406</fpage>–<lpage>25</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Kaufman1">
+        <label>29</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Kaufman L, Rousseeuw PJ (1990) Finding Groups in Data: An Introduction to Cluster Analysis. Hoboken, NJ, USA: John Wiley &amp; Sons, Inc. 342. doi:10.1002/9780470316801.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Legendre1">
+        <label>30</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Legendre P, Legendre L (1998) Numerical Ecology. 2nd ed. Amsterdam: Elsevier. 839 p.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Jensen1">
+        <label>31</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jensen</surname><given-names>LJ</given-names></name>, <name name-style="western"><surname>Bork</surname><given-names>P</given-names></name> (<year>2010</year>) <article-title>Ontologies in quantitative biology: a basis for comparison, integration, and discovery</article-title>. <source>PLoS Biology</source> <volume>8</volume>: <fpage>e1000374</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pbio.1000374" xlink:type="simple">10.1371/journal.pbio.1000374</ext-link></comment>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055674-Dahdul1">
+        <label>32</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dahdul</surname><given-names>WM</given-names></name>, <name name-style="western"><surname>Balhoff</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Engeman</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Grande</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Hilton</surname><given-names>EJ</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Evolutionary characters, phenotypes and ontologies: curating data from the systematic biology literature</article-title>. <source>PLoS One</source> <volume>5</volume>: <fpage>e10708</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0010708" xlink:type="simple">10.1371/journal.pone.0010708</ext-link></comment>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
